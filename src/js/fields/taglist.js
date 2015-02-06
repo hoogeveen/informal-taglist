@@ -24,7 +24,11 @@ TagList.prototype.build = function(){
 	this.taglist = this.wrap.querySelector('.taglist--tags');
 
 	var addButton = this.wrap.querySelector('.btn-add'),
-		self = this, i;
+		self = this, i, empty;
+
+	this.input.addEventListener('keydown', function(e){
+		empty = (!self.input.value) ? true : false;
+	});
 
 	this.input.addEventListener('keyup', function(e){
 		e.preventDefault();
@@ -32,10 +36,12 @@ TagList.prototype.build = function(){
 			if (!self.input.value) return;
 			self.addValue(self.input.value);
 		} else if (e.keyCode == 8){
-			if (self.input.value) return;
+			if (!empty) return;
+
 			self.values.pop();
-			console.log(self.taglist.children[0]);
 			self.taglist.removeChild(self.taglist.childNodes[self.taglist.children.length - 1]);
+		} else {
+			if (self.input.value) empty = false;
 		}
 	});
 
