@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "name": "Personal details",
+      "groups": ["group1"]
+    }
+  ],
+
+  "groups": {
+    "group1": {
+      "name": "Your name",
+      "fields": ["taglist"]
+    }
+  },
+
+  "fields": {
+    "taglist": {
+      "type": "taglist",
+      "label": "Tag List"
+    }
+  }
+}

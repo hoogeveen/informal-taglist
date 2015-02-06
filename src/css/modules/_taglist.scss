@@ -1,0 +1,31 @@
+.informal--taglist {
+	border: 1px solid #ccc;
+	padding: 6px;
+	input {
+		height: 25px;
+		min-width: 100px;
+		display: inline-block;
+		margin-right: 10px;
+		border:none;
+	}
+	button {
+		height: 25px;
+	}
+	.taglist--tags {
+		display: inline-block;
+		padding: 0;
+		margin:0;
+		li {
+			background-color: #1D5F97;
+			color: #fff;
+			padding: 3px 8px;
+			border-radius: 3px;
+			margin-right: 5px;
+			display: inline-block;
+			span {
+				margin-right: 5px;
+				cursor: pointer;
+			}
+		}
+	}
+}

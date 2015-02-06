@@ -1,0 +1,30 @@
+{
+  "name": "informal-taglist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-sass": "^1.3.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-watch": "^4.1.0",
+    "informal": "^0.3.5",
+    "inherits": "^2.0.1",
+    "behaviour": "^0.1.0",
+    "browserify": "^8.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoogeveen/informal-taglist"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoogeveen/informal-taglist/issues"
+  },
+  "homepage": "https://github.com/hoogeveen/informal-taglist"
+}
